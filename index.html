@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutuja | Engineering Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #f0f0f0;
+    }
+
+    html {scroll-padding-top: 80px;}
+
+    /* NAVBAR */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    nav .nav-container {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;   /* Changed: removed spacing for name */
+        align-items: center;
+        padding: 15px 0;
+    }
+    nav ul {list-style: none; display: flex; gap: 30px;}
+    nav a {text-decoration: none; color: #fff; font-weight: 500; transition: 0.3s;}
+    nav a:hover {color: #00eaff;}
+
+    /* HERO */
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        width: 85%;
+        margin: auto;
+        padding-top: 80px;
+        gap: 30px;
+    }
+    .hero-text {flex: 1; min-width: 300px;}
+    .hero-text h1 {font-size: 50px; margin-bottom: 10px;}
+    .hero-text h2 {color: #00eaff; margin-bottom: 20px;}
+    .hero-text p {font-size: 18px; line-height: 1.6;}
+    .hero-img {flex: 1; text-align: center;}
+    .hero-img img {
+        width: 380px; height: 380px;
+        object-fit: cover; border-radius: 20px;
+        border: 3px solid #00eaff; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    section {
+        width: 85%;
+        margin: 80px auto;
+        padding: 40px;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        border-left: 5px solid #00eaff;
+    }
+    .section-title {text-align: center; font-size: 32px; color: #00eaff; margin-bottom: 30px;}
+    .section-content p {line-height: 1.8; font-size: 18px; margin-bottom: 15px;}
+
+    .skills-list {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
+    .skill-item {
+        background: rgba(0,0,0,0.3);
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .skill-item:hover {background: rgba(0,234,255,0.3);}
+
+    .project-card {margin-bottom: 20px; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px; transition: 0.3s;}
+    .project-card:hover {background: rgba(0,234,255,0.2);}
+
+    .education-item {margin-bottom: 20px; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px; transition: 0.3s;}
+    .education-item h3 {color:#00eaff; margin-bottom: 5px;}
+    .education-item p {margin: 3px 0;}
+
+    .contact p {font-size: 18px; text-align: center; margin: 8px 0;}
+
+    .footer {text-align: center; padding: 20px; background: rgba(0,0,0,0.3); color: #fff; margin-top: 50px;}
+
+    @media (max-width: 900px){
+        .hero {flex-direction: column; text-align: center;}
+        .hero-img img {width: 280px; height: 280px;}
+    }
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm Rutuja</h1>
+        <h2>Engineering Student</h2>
+        <p>Passionate about embedded systems, digital electronics, communication systems, and real-world technical innovations.</p>
+    </div>
+    <div class="hero-img">
+        <img src="C:\Users\rutuj\Downloads\Rutuja.jpg" alt="Profile Photo">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h1 class="section-title">About Me</h1>
+    <div class="section-content">
+        <p>I am a dedicated engineering student with a passion for embedded systems and communication technologies.</p>
+        <p>I have hands-on experience with STM32, ESP32, MATLAB/Simulink, and Verilog.</p>
+        <p>My goal is to build innovative and eco-friendly engineering solutions.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h1 class="section-title">Skills</h1>
+    <div class="skills-list">
+        <div class="skill-item">C / C++</div>
+        <div class="skill-item">STM32 / ESP32</div>
+        <div class="skill-item">MATLAB / Simulink</div>
+        <div class="skill-item">Digital Electronics</div>
+        <div class="skill-item">Verilog</div>
+        <div class="skill-item">Data Structures</div>
+        <div class="skill-item">UART / PWM / I2C / SPI</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h1 class="section-title">Projects</h1>
+    <div class="project-card">
+        <h2>Gas Leakage Detection System</h2>
+        <p>ESP32 + MQ-5 gas sensor with servo shutoff and Blynk alerts.</p>
+    </div>
+    <div class="project-card">
+        <h2>Digital Communication System</h2>
+        <p>Simulated CELP, Huffman, CRC32, GFSK, and Rician channels.</p>
+    </div>
+    <div class="project-card">
+        <h2>Eco-Friendly Refrigerator</h2>
+        <p>Energy-efficient cooling concept with sustainable technology.</p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h1 class="section-title">Education</h1>
+    <div class="education-item">
+        <h3>B.Tech in Electronics Engineering</h3>
+        <p>MIT College of Engineering, Pune</p>
+        <p>2023 – Present | GPA: 9.2/10</p>
+    </div>
+    <div class="education-item">
+        <h3>Higher Secondary Education</h3>
+        <p>Maharashtra Board | 92%</p>
+    </div>
+    <div class="education-item">
+        <h3>Secondary Education</h3>
+        <p>Percentage: 95%</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h1 class="section-title">Contact</h1>
+    <p>Email: 202301070007@mitaoe.ac.in</p>
+    <p>Phone: 8329414882</p>
+    <p>Location: India</p>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2025 Rutuja | Engineering Portfolio. Designed with ❤
+</div>
+
+</body>
+</html>
